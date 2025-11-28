@@ -15,7 +15,7 @@ scroll-behavior: smooth;
 
 header{
    
-    background-image: url(../image/arbre.jpeg);
+    background-image: url(image/arbre.jpeg);
     height: 70vh;
     background-color: black;
     background-position: center ;  /* sinon on ne voit pas la tete du mr donc */
