@@ -57,7 +57,7 @@ header{
 
 .slider a:hover{
     transform: scale(1.1); /* l'effet zoom justement  */
-    color: rgb(159, 71, 3);
+    color: rgba(142, 45, 226, 0.8);
 }
 
 
