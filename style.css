@@ -1,6 +1,6 @@
-html{
-background-color: #171717 ;
-scroll-behavior: smooth;
+body{
+    background-color: #171717 ;
+    scroll-behavior: smooth;
 }
 
 
@@ -10,13 +10,13 @@ scroll-behavior: smooth;
     margin: 0;
 }
 
-
+                              /*  ====================== header ====================== */
 
 
 header{
    
-    background-image: url(image/arbre.jpeg);
-    height: 70vh;
+    background-image: url(../image/arbre.jpeg);
+     height: 70vh;
     background-color: black;
     background-position: center ;  /* sinon on ne voit pas la tete du mr donc */
     background-size:cover;
@@ -115,7 +115,7 @@ header{
 
 
 
-
+                              /*  ====================== main ====================== */
 
 
 
@@ -292,7 +292,7 @@ color: #F0F0F0;
 .grille{            /*ca c le bloc principale */
 justify-content: center;
 padding: 2vw;
-height: 50vh;
+
 display: grid;
 grid-template-columns:  300px 300px 300px 300px ;
 grid-template-rows: 200px 200px ;
@@ -351,7 +351,7 @@ filter: brightness(100%);
 
 
 
-#D {       /* ca c pour le style  jai pas voulu le mettre dans leur classe respective pour des questiions dorganisation */
+#D {       /* ca c pour le style  jai pas voulu le mettre dans leur classe respective ( despcription et reseaux )  pour des questiions dorganisation */
 transition: 0.4s;
 font-style: serif ;
 font-weight: bolder;
@@ -376,13 +376,23 @@ transform: translateY(-5px);
 
 
 
+.fin{              /*le dernier titre de ma page */
+padding-top: 2vw;
+text-align: center;
+font-family: "Pacifico";
+font-weight: bolder;
+font-style: oblique;
+font-size: 2em;
+color: #F0F0F0;
+
+
+}
 
 
 
 
 
 .contacte{       /*bloc principale de mon formulaire */
-
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -397,17 +407,6 @@ transform: translateY(-5px);
 
 
 
-.fin{              /*le dernier titre de ma page */
-padding-top: 2vw;
-text-align: center;
-font-family: "Pacifico";
-font-weight: bolder;
-font-style: oblique;
-font-size: 2em;
-color: #F0F0F0;
-
-
-}
 
 
 
@@ -432,7 +431,7 @@ transform: translateY(-5px);
 
 
 
-input, textarea ,select {
+input, textarea ,select {   /* c pour gerer lespae dans les barres de recherche (  ou on insert les info ) */
     color: #dedede;
     background-color: #2f2f2f;  
     padding:5px;
@@ -441,7 +440,7 @@ input, textarea ,select {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-button{
+button{ /* reglage du boutton */
 
 border-radius: 10px;
 padding:2px;
@@ -451,15 +450,18 @@ width: 200px;
 }
 
 textarea{
-
-max-width: 900px;
+max-width: 100%;
 }
 
 
 
 
 
-footer{
+
+                              /*  ====================== footer ====================== */
+
+
+footer{       /* bloc princale du footer */
 color: #bcbcbcf2;
  background-color: rgba(0 , 0 , 0 , 0.5 );
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -477,13 +479,6 @@ align-items: center;
 }
 
 
-.cordonnes{  
-display: flex;
-flex-direction: column;
-gap: 2px;
-
-}
-
 
 .box a {
 color: #f2f2f2;
@@ -493,24 +488,12 @@ text-decoration: none;
 
 }
 
-
-
 .box2{
 text-align: center;
-padding: 5px;
+
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
