@@ -1,14 +1,11 @@
 body{
     background-color: #171717 ;
     scroll-behavior: smooth;
-}
-
-
-* {
-
     padding: 0;
     margin: 0;
 }
+
+
 
                               /*  ====================== header ====================== */
 
