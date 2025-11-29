@@ -1,9 +1,16 @@
-body{
-    background-color: #171717 ;
-    scroll-behavior: smooth;
-    padding: 0;
+html{
+ scroll-behavior: smooth;
+ background-color: #171717 ;
+ 
+}
+
+*{
+ 
+   
+     padding: 0;
     margin: 0;
 }
+
 
 
 
@@ -12,7 +19,7 @@ body{
 
 header{
    
-    background-image: url(image/arbre.jpeg);
+    background-image: url(../image/arbre.jpeg);
      height: 70vh;
     background-color: black;
     background-position: center ;  /* sinon on ne voit pas la tete du mr donc */
@@ -57,15 +64,14 @@ header{
 
 .slider a:hover{
     transform: scale(1.1); /* l'effet zoom justement  */
-    color: rgba(142, 45, 226, 0.8);
+    color:rgba(142, 45, 226, 0.8);
 }
 
 
 .text h2{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     font: italic normal bold 3em/1.2 Arial, sans-serif;
-    color:rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255);
     
 }
 
@@ -492,20 +498,5 @@ text-align: center;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
