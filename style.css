@@ -499,93 +499,53 @@ text-align: center;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1324px) {
+@media screen and (max-width: 1350px) and {
 
     
-    header {
-        height: auto; /* s’adapte au contenu */
-    }
-
-    .titre {
-    
-         padding: 40px ;
-    }
-
-    .titre h1 {
-        font-size: 30px;        /* titre plus petit */
-    }
-
-    .titre p {
-        font-size: 20px;        /* phrase plus lisible */
-        
-    }
-
-    
-    .bloc1 {
-        flex-direction: column;  
-        align-items: center;
-        height: auto;
-        gap: 20px;
-    }
-
-    .services, .moi {
-        font-size: 20px;
-        text-align: center;
-    }
-
-   
-
-    .competences{
-         font-size: 30px;
-       
-    }
-
-                /* s’adapte au contenu */
-    
+    .slider, 
+    .bloc1, 
     .dark {
-        
-        flex-direction: column;  /* titre au-dessus du tableau */
-        align-items: center;
-        gap: 20px;
+        padding: 1rem;
+        flex-direction: column; /*  à la verticale  */
+        height: auto;           /* On laisse la hauteur s'adapter au contenu */
+        padding: 20px;          /* Un peu d'air */
     }
 
-    .tableau{
-
-        gap: 20px; 
-    }
-
-
-
-    .tableau div {
-      width: auto;
-
-
-    }
-   
+    /* 2. On ajuste la grille des projets (Grid) */
     .grille {
-       
-        display: flex;
-        flex-direction: column;  
-        align-items: center;
+        display: flex;          /* a la verticale aussi  */
+        flex-direction: column; 
         gap: 20px;
     }
+    
+  
+    
+    .titre h1 { 
+        font-size: 8vw; 
+    } 
 
-    .grille div {   
-        width: 250px;
-      
+
+    .titre p { 
+        font-size: 4vw; 
     }
 
-   
+
+
+    .services, .moi, .competences, .projets { 
+        font-size: 1.2rem; 
+    }
+
+
+
+
+
+  
 }
+
+
+
+
+
+
+
 
