@@ -444,6 +444,14 @@ input, textarea ,select {   /* c pour gerer lespae dans les barres de recherche 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
+
+textarea{
+    width: 98%;
+}
+
+
+
 button{ /* reglage du boutton */
 color: aliceblue;
 background-color: #2f2f2f;
