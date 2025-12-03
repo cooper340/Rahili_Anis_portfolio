@@ -1,28 +1,33 @@
-html{
- scroll-behavior: smooth;
- background-color: #171717 ;
+
+
+
+
+
+body{
+background-color: var(--bg-principal);
+ 
  
 }
 
 *{
- 
    
-     padding: 0;
+   scroll-behavior: smooth;
+    padding: 0;
     margin: 0;
 }
 
 
 
 
-                              /*  ====================== header ====================== */
+                              /* ====================== header ====================== */
 
 
 header{
    
     background-image: url(image/arbre.jpeg);
      height: 70vh;
-    background-color: black;
-    background-position: center ;  /* sinon on ne voit pas la tete du mr donc */
+    background-color: var(--bg-sombre);
+    background-position: center ;  /* sinon on ne voit pas la tete du mr  donc */
     background-size:cover;
     
     
@@ -32,7 +37,7 @@ header{
 
 .slider{
     padding-right: 30px;    /* comme ca les liens ne sont pas coller a droite */
-    background-color: rgba(0 , 0 , 0 , 0.5 );
+    background-color: var(--bg-transparent);
     display: flex;    /* ca doit etre en flex car je vais diviser la partie en deux  la nav et le texte h2*/
     justify-content: space-between; /* pour que les deux txtes soient aux extrémité ( autrement jaurais mis center ou space-around  */
     align-items: center;
@@ -52,11 +57,11 @@ header{
 
 
 .slider a{
-    display: inline-block;  /*  pour faire l'effet zoom*/
+    display: inline-block;  /* pour faire l'effet zoom*/
     font-weight: bold;
     font-size: 1.5em; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: var(--font-texte); 
+    color: var(--txt-blanc);
     text-decoration: none;
     transition: 0.4s;   /* pour que l'effet ne soit pas agresive  */
 }
@@ -64,14 +69,14 @@ header{
 
 .slider a:hover{
     transform: scale(1.1); /* l'effet zoom justement  */
-    color:rgba(142, 45, 226, 0.8);
+    color: var(--violet-hover);
 }
 
 
 .text h2{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-    font: italic normal bold 3em/1.2 Arial, sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: var(--font-texte);
+    color: var(--txt-blanc);
     
 }
 
@@ -96,19 +101,19 @@ header{
 
 
     text-transform: uppercase;     /*ca mets le texte en majuscule */
-    font-family: 'Pacifico';
+    font-family: var(--font-titre);
     font-weight: bolder; /* très épais */
     text-align: center; /* centré */
-    color: rgb(251, 251, 251);
+    color: var(--txt-blanc);
     font-size: 2vw;
 }
 
 
 
 .titre p{
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-texte);
     font-size: 1.2vw;
-    color: rgb(255, 255, 255);
+    color: var(--txt-blanc);
 }
 
 
@@ -119,7 +124,7 @@ header{
 
 
 
-                              /*  ====================== main ====================== */
+                              /* ====================== main ====================== */
 
 
 
@@ -130,14 +135,14 @@ header{
     align-items: start;
     display: flex;
     height: 20vh;
-    color: #F0F0F0;
+    color: var(--txt-titre);
 }
 .services{
     font-style: italic;
     font-size: 2vw;
     flex: 1;
     font-weight: bolder;
-    font-family:"Pacifico" ;
+    font-family: var(--font-titre);
     
 
 }
@@ -148,10 +153,10 @@ header{
     font-weight: bold;
     border-radius: 15px;
     font-size: 1.2vw;
-    font-family: cursive;
+    font-family: var(--font-texte); 
     flex: 2;
     transition: 0.4s;
-    color: #cfcccc;
+    color: var(--txt-corps);
     
 }
 
@@ -159,7 +164,7 @@ header{
 
 .moi:hover{
 transform: translateY(-5px);
-box-shadow: 0 0 18px rgba(142, 45, 226, 0.8);
+box-shadow: 0 0 18px var(--violet-hover);
 }
 
 
@@ -179,11 +184,11 @@ flex: 1;
 padding: 2vw;
 display: flex;
 align-items: center;
-font-family: "Pacifico";
+font-family: var(--font-titre);
 font-weight: bolder;
 font-style: oblique;
 font-size: 2vw;
-color: #F0F0F0;
+color: var(--txt-titre);
 
 
 }
@@ -204,7 +209,7 @@ align-items: center;
 
 border-radius: 30px;
 flex: 1;
-background-color: rgba(106, 99, 99, 0.5);
+background-color: var(--bg-elements);
 
 
 }
@@ -212,7 +217,7 @@ background-color: rgba(106, 99, 99, 0.5);
 .c{
 flex: 1;
 border-radius: 30px;
-background-color: rgba(106, 99, 99, 0.5);
+background-color: var(--bg-elements);
 
 
 }
@@ -220,7 +225,7 @@ background-color: rgba(106, 99, 99, 0.5);
 .python{
 flex: 1;
 border-radius: 30px;
-background-color: rgba(106, 99, 99, 0.5);
+background-color: var(--bg-elements);
 
 
 
@@ -231,7 +236,7 @@ background-color: rgba(106, 99, 99, 0.5);
 .java{
 flex: 1;
 border-radius: 30px;
-background-color: rgba(106, 99, 99, 0.5);
+background-color: var(--bg-elements);
 
 
 
@@ -249,7 +254,7 @@ object-fit: contain;
 }
 
 .tableau h3 {
-color: #F0F0F0;
+color: var(--txt-titre);
 text-align: center;
 
 
@@ -275,11 +280,11 @@ transform: scale(1.1);
 .projets{
 text-align: center;
 margin-top:  3vw;
-font-family: "Pacifico";
+font-family: var(--font-titre);
 font-weight: bolder;
 font-style: oblique;
 font-size: 2em;
-color: #F0F0F0;
+color: var(--txt-titre);
 
 
 
@@ -309,7 +314,7 @@ gap: 30px;
 
 .grille div {     /*ca c  pour centrer le text au bloc  */  
 text-align: center;
-color: #F0F0F0;
+color: var(--txt-titre);
 
 }
 
@@ -359,18 +364,18 @@ filter: brightness(100%);
 transition: 0.4s;
 font-style: serif ;
 font-weight: bolder;
-font-family: cursive;
+font-family: var(--font-texte); 
 border-radius: 15px;
 text-align: start;
 font-size: 1.1em;
-color: #cfcccc;
+color: var(--txt-corps);
 
 
 
 }
 
 #D:hover{
-box-shadow: 0 0 18px rgba(142, 45, 226, 0.8);
+box-shadow: 0 0 18px var(--violet-hover);
 transform: translateY(-5px);
 
 }
@@ -380,14 +385,103 @@ transform: translateY(-5px);
 
 
 
+
+
+
+
+
+
+
+
+                                /* ================= PARCOURS  ================= */
+
+
+
+
+
+
+
+/* Le titre */
+.titre-parcours {
+    text-align: center;
+    margin-top: 3vw;
+    font-family: var(--font-titre);
+    font-size: 2em;
+    color: var(--txt-titre);    
+}
+
+/* Le conteneur qui tient toutes les boites */
+.liste-ecoles {
+    display: flex;             
+    flex-direction: column;   
+    align-items: center;
+    gap: 20px;              
+    padding: 20px;
+}
+
+/* Le style de chaque boite  */
+.ecole {
+
+    display: flex;
+    flex-direction: column;
+    width: 60%; 
+    gap: 5px;              
+    padding: 20px;            
+    color: var(--txt-titre);          
+    align-items: center;     
+    border-left: 5px solid var(--violet-main); 
+    border-radius: 15px; 
+    background: linear-gradient(145deg, rgba(55, 55, 55, 0.9), rgba(24, 24, 24, 0.9));
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5); 
+    transition: 0.4s;
+
+
+
+
+}
+
+
+.ecole:hover {
+ transform: translateX(20px); /* Petit décalage vers la droite */
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+.ecole h4 {
+    font-size: 1.3em;
+    color: var(--txt-blanc); 
+}
+
+.duree {
+  
+    background-color: white ;
+    color: #000;
+    padding-right:5px ;
+    padding-left:5px ;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .fin{              /*le dernier titre de ma page */
 padding-top: 2vw;
 text-align: center;
-font-family: "Pacifico";
+font-family: var(--font-titre);
 font-weight: bolder;
 font-style: oblique;
 font-size: 2em;
-color: #F0F0F0;
+color: var(--txt-titre);
 
 
 }
@@ -401,7 +495,6 @@ color: #F0F0F0;
     display: flex;
     justify-content: center;
     align-items: center;
-   
 
 }
 
@@ -416,9 +509,8 @@ color: #F0F0F0;
 
 .partie1{   /* le bloc du formulaire */
 width: 60vw;
-background-color: #212021; 
-height: 50vh;
-color:  #eeeeee;
+height: auto;
+color: #eeeeee;
 padding:5px;
 border-radius: 15px;
 display: flex;
@@ -426,9 +518,10 @@ flex-direction: column;
 transition: 0.4s;
 
 
+
 }
 .partie1:hover{
-box-shadow: 0 0 18px rgba(142, 45, 226, 0.8);
+box-shadow: 0 0 18px var(--violet-hover);
 transform: translateY(-5px);
 
 }
@@ -436,21 +529,16 @@ transform: translateY(-5px);
 
 
 input, textarea ,select {   /* c pour gerer lespae dans les barres de recherche (  ou on insert les info ) */
-    color: #dedede;
-    background-color: #2f2f2f;  
+    color: #eeeeee;
     padding:5px;
+    background-color: var(--bg-input); 
     border-radius: 10px;
     font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--font-texte); 
 }
-
-
-
 textarea{
     width: 98%;
 }
-
-
 
 button{ /* reglage du boutton */
 color: aliceblue;
@@ -467,14 +555,13 @@ width: 200px;
 
 
 
-
-                              /*  ====================== footer ====================== */
+                             /* ====================== footer ====================== */
 
 
 footer{       /* bloc princale du footer */
 color: #bcbcbcf2;
- background-color: rgba(0 , 0 , 0 , 0.5 );
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ background-color: var(--bg-transparent);
+font-family: var(--font-texte); 
 
 
 }
@@ -505,21 +592,44 @@ text-align: center;
 
 }
 
-@media screen and (max-width: 1024px)  {
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= responsv================= */
+@media (max-width: 1024px){
+
+    /*  On mets tout a la verticale  */
     .slider, 
     .bloc1, 
     .dark {
         padding: 1rem;
-        flex-direction: column; /*  à la verticale  */
-        height: auto;           /* On laisse la hauteur s'adapter au contenu */
-        padding: 20px;          /* Un peu d'air */
+        flex-direction: column; 
+        height: auto;/* On laisse la hauteur s'adapter au contenu */
+        padding: 20px;         
     }
 
-    /* 2. On ajuste la grille des projets (Grid) */
+    
     .grille {
-        display: flex;          /* a la verticale aussi  */
+        height: auto;
+        display: flex;          /* On passe en flex pour empiler simplement */
         flex-direction: column; 
         gap: 20px;
     }
@@ -528,7 +638,6 @@ text-align: center;
 
         height: auto;
     }
-    
     
     .titre h1 { 
         font-size: 8vw; 
@@ -544,20 +653,12 @@ text-align: center;
     .services, .moi, .competences, .projets { 
         font-size: 1.2rem; 
     }
-
-   .partie1{
+    .partie1{
         height: auto;
     }
 
 
 
+
   
 }
-
-
-
-
-
-
-
-
